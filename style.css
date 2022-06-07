@@ -1,0 +1,115 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+side-menu{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+side-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    height: 536px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+}
+.caixa-nome-evento{
+    width: 220px;
+    height: 68px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.nome-evento{
+
+position: absolute;
+left: 1.75%;
+right: 10%;
+top: 2.5%;
+bottom: 0%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 35px;
+display: flex;
+
+color: #FFFFFF;
+}
+.retangulo{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+}
+.logo{
+    width: 220px;
+    height: 258px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.logo_slaca{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+.menu{
+    width: 220px;
+    height: 35px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    position: absolute;
+    left: 10.91%;
+    top: 60%;
+    bottom: 25.71%;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #725C5C;
+}
+.h1{
+    position: absolute;
+    left: 10.91%;
+    right: 544.09%;
+    top: 0%;
+    bottom: 25.71%;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #725C5C;
+}
+header{
+    position: absolute;
+    width: 100%;
+    left: 1000px;
+    top: 0px;
+    bottom: 0px;
+
+}
