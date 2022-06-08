@@ -1,79 +1,326 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuva - Exercicio Frontend</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>chuva-frontend</title>
 </head>
-
-
-<body class="body">
-
-
-    <side-menu class="side-menu">
-        <div class="side-bar">
-            <div class="caixa-nome-evento">
-                <img class="retangulo" src="Rectangle 239.svg">
-                <h1 class="nome-evento">SLACA 2019</h1>
+<link rel="stylesheet" href="chuva.css">
+<body>
+    <div class="side-menu-container">
+        <nav>
+            <div class="side-menu-nome_evento">
+                <div>
+                    <span>SLACA 2019</span>
+                </div>
             </div>
-            <div class="logo">
-                <img class="logo-slaca" src="slaca.svg">
-            <div class="menu">
-                <h1 class="apresentacao">Apresentação</h1>
-                <h2 class="comites">Comitês</h2>
-                <h3 class="autores">Autores</h3>
-                <h4 class="eixos">Eixos Temáticos</h4>
-                <h5 class="trabalhos">Trabalhos</h5>
-                <h6 class="contato">Contato</h6>
+            <div>
+                <img src="Imagens/dewey 4.png" alt="">
             </div>
-        </div>
-    </side-menu>
-
-
-    <header class="header">
-        <div class="cabeçalho">
-            <h1 class="cabeçalho-primeiro">Anais do Simpósio Latino Americano de Ciências de Alimentos</h1>
-            <h2 class="cabeçalho-segundo">Anais do 13° Simpósio Latino Americano de Ciência de Alimentos</h2>
-            <h3 class="cabeçalho-terceiro">ISSN: 1234-5678</h3>
-        </div>
-        <div class="idioma">
-            <button class="idioma-botao">PT, BR</button>
-            <img class="idioma-botao-globo" src="language image.svg">
-            <img class="idioma-botao-quadro" src="language button.svg">
-            <img class = "idioma-botao-alterna" src="dropdown.svg">
-        </div>
-
-        <div class="login">
-            <h1 class="login-bem-vindo">Bem Vindo!</h1>
-            <h2 class="login-email">alguem12@galoscience.com</h2>
-            <img class="login-foto" src="image.svg">
-        </div>
-
-
-    </header>
-
-    <content>
-        <section>
-
+            <div class="side-menu-itens">
+                <div id="item1">
+                    <a>Apresentação</a>
+                </div>
+                <div id="item2">
+                    <a>Comitês</a>
+                </div>
+                <div id="item3">
+                    <a>Autores</a>
+                </div>
+                <div id="item4">
+                    <a>Eixos temáticos</a>
+                </div>
+                <div id="item5">
+                    <a>Trabalhos</a>
+                </div>
+                <div id="item6">
+                    <a>Contato</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="menu-header">
+        <header>
+            <div class="menu-header-title">
+                <span id="header-item1">Anais do Simpósio Latino Americano de Ciências de Alimentos </span>
+                <p id="header-item2">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
+                <span id="header-item3">ISSN: 1234-5678</span>
+            </div>
+            <div class="menu-header-lang">
+                <div>
+                    <img class="menu-header-langImg" src="Imagens/language image.png" alt="">
+                    <select name="" id="">
+                            <option value="pt-br"> PT, BR </option>
+                    </select>
+                </div>
+            </div>
+            <div class="menu-header-userInfo">
+                <div>
+                    <span id="menu-header-userInfo-BemVindo">Bem vindo!</span>
+                    <span id="menu-header-userInfo-Email">alguem12@galoascience.com</span>
+                </div>
+                <div class="menu-header-userInfoImg-container">
+                    <i>2</i>
+                    <img class="menu-header-userInfoImg" src="Imagens/pessoaquenaoexiste.png" alt="">
+                </div>
+            </div>
+        </header>
+        <section class="section-container">
+            <div class="section-leftSide">
+                <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
+                
+                <div class="photo-pseudo">
+                    <div class="photo-container">
+                        <h3>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h3>
+                        <h4>Beatriz Christiane Melo </h4>
+                        <h5>FCA / Universidade Estadual de Campinas </h5>
+                        <img src="Imagens/dewey 1.svg">
+                    </div>
+                    <div class= "photo-sir">
+                        <img src="Imagens/image.png">
+                    </div> 
+                </div>   
+            </div>
+            <div class="section-rightSide">
+                <div class="section-rightSide-btn-container">
+                    <div class="section-rightSide-btn-subContainer">
+                        <button class="section-rightSide-download"> <img src="Imagens/download.svg" alt=""> Download</button>
+                        <button> <img src="Imagens/star.svg" alt=""> </button>
+                        <button> <img src="Imagens/doi.svg" width="19px" height="19px" alt=""> </button>
+                    </div>
+                    <p>COMO CITAR ESSE TRABALHO?</p>
+                </div>
+                <div class="section-rightSide-text-container">
+                    <p>Detalhes</p>
+                    <span>
+                        <span> Tipo de Apresentação: <strong> Pôster </strong> </span> 
+                        <span> Eixo temático: <strong>Alimentação e saúde (AS)  </strong>  </span> 
+                        <span> Palavras-chaves: <strong> Alimentos funcionais, alimentação escolar. </strong> </span> 
+                        <br>
+                        <br>
+                        <h2><strong> Autores: </strong></h2>
+                        <h1> Galileo Galilei¹</h1> 
+                        <h1> Berta Lange de Morretes² </h1> 
+                        <h1> Isaac Newton³ </h1> 
+                        <h1> Cesar Lattes¹ </h1> 
+                        <h1> Stephen Hawking⁴ </h1> 
+                        <br>
+                        <br>
+                        <br>
+                        <span>
+                            ¹Universidade Estadual de Campinas<br>
+                            ²Universidade de São Paulo<br>
+                            ³Instituto Nacional de Pesquisas Espaciais<br>
+                            ⁴Universidade Federal do Rio de Janeiro
+                        </span>
+                    </span>
+                </div>
+            </div>
         </section>
-
-        <section>
-
+        <section class="section-summary">
+            <div>
+                <p>Resumo</p>
+                <span id="section-summary-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <span onclick="showMore()" id="section-summary-text-showMore"> ver mais </span> 
+                </span>
+            </div>
         </section>
-
-        <section>
-
-
+        <section class="section-discussion-container">
+            <p>Discussões</p>
+            <div class="section-discussion">
+                <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+                <div class="section-discussion-icons">
+                    <div>
+                        <img id="img-fundo" src="Imagens/vetor-esquerda/Vector 23.svg" alt="">
+                        <img style="margin: 9.48px 8.1px 23.84px 16.42px;" id="img-folha" src="Imagens/vetor-esquerda/Vector.svg" alt="">
+                        <img style="margin: 25.02px 30.84px 11px 12.5px;" id="img-braco" src="Imagens/vetor-esquerda/Vector(1).svg" alt="">
+                        <img style="margin: 27.37px 6.76px 8.41px 18.64px;" id="img-mao" src="Imagens/vetor-esquerda/Vector(2).svg" alt="">
+                    </div>
+                    <div>
+                        <img src="Imagens/vetor-esquerda/Vector 23.svg" alt="">
+                        <img style="margin: 10px 19.52px 18.18px 11px;" id="img-borda-Q" src="Imagens/vetor-meio/Vector(3).svg" alt="">
+                        <img style="margin: 16.61px 26.09px 26.77px 18.61px;" id="img-fundo-Q" src="Imagens/vetor-meio/Vector(4).svg" alt="">
+                        <img style="margin: 20.32px 3.65px 7.94px 26.87px;" id="img-borda-A" src="Imagens/vetor-meio/Vector(5).svg" alt="">
+                        <img style="margin: 28.58px 13.44px 18.26px 35.23px;" id="img-triangulo" src="Imagens/vetor-meio/Vector(6).svg" alt="">
+                    </div>
+                    <div>
+                        <img src="Imagens/vetor-esquerda/Vector 23.svg" alt="">
+                        <img style="margin: 8.75px 16.85px 28.15px 21.59px;" id="img-top-lampada" src="Imagens/vetor-direita/Vector(7).svg" alt="">
+                        <img style="margin: 23.19px 27.35px 17.87px 15.03px;" id="img-cabeca-esquerda" src="Imagens/vetor-direita/Vector(8).svg" alt="">
+                        <img style="margin: 33.69px 24.07px 8.69px 11.75px;" id="img-corpo-esquerda" src="Imagens/vetor-direita/Vector(9).svg" alt="">
+                        <img style="margin: 23.19px 10.29px 17.87px 32.09px;" id="img-cabeca-direita" src="Imagens/vetor-direita/Vector(8).svg" alt="">
+                        <img style="margin: 33.69px 7.01px 8.69px 28.81px;" id="img-corpo-direita" src="Imagens/vetor-direita/Vector(9).svg" alt="">
+                        <img style="margin: 22.1px 20.08px 24.43px 24.82px;" id="img-bot-lampada" src="Imagens/vetor-direita/Vector(10).svg" alt="">
+                    </div>
+                </div>
+                <div class="section-discussion-bottomText">
+                    <span>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</span>
+                </div>
+                <div class="section-discussion-criarTopico">
+                    <hr style="display: block; position: absolute; width: calc(100% - 31px); z-index: -1;">
+                    <div class="section-discussion-criarTopico-retangle">
+                        <div>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button onclick="criarTopicoLayout()">
+                                criar topico
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ELEMENTO PARA MOSTRAR APÓS ENVIO DE FORMULARIO -->
+                <div style="display: none;" class="section-discussion-topicoCriado">
+                    <h4>Seu tópico foi enviado com sucesso! :D</h4>
+                    <span>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</span>
+                    <a href="">Descubra outros trabalhos!</a>
+                    <div class="section-discussion-topicoCriado-botao">
+                        <hr>
+                        <button onclick="criarTopicoLayout()">criar novo topico</button>
+                    </div>
+                    <div class="section-discussion-topicoCriado-feedback">
+                        <img src="Imagens/autorBlack.svg" alt="">
+                        <p>Aguardando feedback dos autores</p>
+                        <div>
+                            <a href="">Editar tópico</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- FORMULARIO PARA CRIAÇÃO DE NOVO TOPICO -->
+                <div style="display: none;" class="section-criarTopico-form">
+                    <h4> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores! </h4>
+                    <form action="">
+                        <label style="margin-bottom: 10px;" for="">
+                            Assunto <input id="criarTopicoAssunto" type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+                        </label>
+                        <label for="">
+                            Conteúdo <input id="criarTopicoConteudo" type="text">
+                        </label>
+                        <div class="section-criarTopico-edit_submit">
+                            <div>
+                                <img src="Imagens/form/negrito.svg" alt="">
+                                <img src="Imagens/form/italico.svg" alt="">
+                            </div>
+                            <div id="criarTopicoEnviar">
+                                <input type="button" onclick="sendTopic()" value="Enviar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- ------ -->
+                <div class="section-discussion-comments">
+                    <p>Assunto da pergunta aparece aqui</p>
+                    <span>Carlos Henrique Santos</span>
+                    <span>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</span>
+                    <div class="section-discussion-comments-info">
+                        <div>
+                            <img src="Imagens/comentarios/Ellipse 17.svg" alt="">
+                            <img src="Imagens/comentarios/Ellipse 17.svg" alt="">
+                            <img src="Imagens/comentarios/Ellipse 17.svg" alt="">
+                        </div>
+                        <div>
+                            <img style="margin: 3px 7px 2px 6px; width: 14px; height: 14px; position: absolute;" src="Imagens/comentarios/green apples 22.svg" alt="">
+                        </div>
+                        <div>
+                            <span style="cursor: pointer;" >1 resposta</span>
+                        </div>
+                        <div>
+                            <span style="cursor: pointer;" >1 resposta</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 0;" class="section-discussion-comments">
+                    <p>Assunto da pergunta aparece aqui</p>
+                    <span>Carlos Henrique Santos</span>
+                    <span>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</span>
+                    <div class="section-discussion-comments-info">
+                        <div>
+                            <img src="Imagens/comentarios/Ellipse 17.svg" alt="">
+                            <img src="Imagens/comentarios/Ellipse 17.svg" alt="">
+                            <img src="Imagens/comentarios/Ellipse 17.svg" alt="">
+                        </div>
+                        <div>
+                            <img style="margin: 3px 7px 2px 6px; width: 14px; height: 14px; position: absolute;" src="Imagens/comentarios/green apples 22.svg" alt="">
+                        </div>
+                        <div >
+                           <span style="text-decoration: none;" href="#"> 4 like </a> 
+                        </div>
+                        <div>
+                            <span onclick="showAnswers()" style="cursor: pointer;">4 resposta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-discussion-answers-mainContainer" style="margin-bottom: 15px; display: none;">
+                    <div class="section-discussion-answers">
+                        <div class="section-discussion-answers-subcontainer">
+                            <div>
+                                <div class="text-start">
+                                    <p id="nome_Adriano">Adriano da Silva</p>
+                                </div>
+                                <div class="section-discussion-answers-autor-container">
+                                    <p id="autor">Autor</p>
+                                    <img src="Imagens/autor.svg" alt="">
+                                </div>
+                            </div>
+                            <span>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</span>
+                        </div>
+                    </div>
+                    <div style="background-color: white;" class="section-discussion-answers">
+                        <div class="section-discussion-answers-subcontainer">
+                            <div style="background-color: white;">
+                                <div class="text-start">
+                                    <p id="nome_Adriano">Carlos Henrique Santos</p>
+                                </div>
+                            </div>
+                            <span>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                Obrigada pela resposta, muito interessante o seu trabalho! 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section-discussion-answers">
+                        <div class="section-discussion-answers-subcontainer">
+                            <div>
+                                <div class="text-start">
+                                    <p id="nome_Adriano">Carmila Ferreira Andrade</p>
+                                </div>
+                                <div class="section-discussion-answers-autor-container">
+                                    <p id="autor">Coautor</p>
+                                    <img src="Imagens/autor.svg" alt="">
+                                </div>
+                            </div>
+                            <span>
+                                Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section-discussion-answers">
+                        <div class="section-discussion-answers-subcontainer">
+                            <div>
+                                <div class="text-start">
+                                    <p id="nome_Adriano">Ana Carolina</p>
+                                </div>
+                                <div class="section-discussion-answers-autor-container">
+                                    <p id="autor">Coautor</p>
+                                    <img src="Imagens/autor.svg" alt="">
+                                </div>
+                            </div>
+                            <span>
+                                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-    </content>
-
-    <footer>
-
-
-    </footer>
-
-
+        <footer>
+            <img class="img-fluid" width="1086px" height="181px" src="Imagens/imagem - footer.png" alt="">
+        </footer>
+    </main>
 </body>
 </html>
+<script src="chuva.js"></script>
